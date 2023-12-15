@@ -1,0 +1,39 @@
+.link {
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  color: theme('colors.primary');
+  padding: 0.125rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+.link:focus {
+  box-shadow: theme('colors.light-grey') 0px 0px 0px 1px inset;
+  border-radius: 0.125rem;
+}
+.link:active {
+  background-clip: text;
+  background-image: linear-gradient(
+    90deg,
+    theme('colors.secondary') 0%,
+    theme('colors.primary') 100%
+  );
+  color: transparent;
+  text-decoration: underline;
+  text-decoration-color: theme('colors.secondary');
+}
+
+.link--small {
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+.link--medium {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+.link--normal {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+}

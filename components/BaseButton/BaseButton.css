@@ -1,0 +1,126 @@
+.btn {
+  --coef: 0.6;
+}
+
+.btn {
+  font-family: 'Open Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: max-content;
+}
+.btn--primary {
+  color: white;
+  background: linear-gradient(90deg, theme('colors.primary') 0%, theme('colors.tertiary') 100%);
+}
+.btn--primary:hover {
+  color: white;
+  background: theme('colors.primary');
+}
+.btn--primary:focus {
+  color: white;
+  background: theme('colors.primary');
+  box-shadow: theme('colors.grey') 0px 0px 0px 1px inset;
+}
+.btn--primary:active {
+  color: white;
+  background: linear-gradient(90deg, theme('colors.secondary') 0%, theme('colors.primary') 100%);
+}
+.btn--primary.loading {
+  color: white;
+  background: linear-gradient(90deg, theme('colors.secondary') 0%, theme('colors.primary') 100%);
+}
+.btn--primary:disabled {
+  color: theme('colors.grey-blue');
+  background: theme('colors.silver');
+}
+
+/* Secondary Btn */
+.btn--secondary {
+  color: theme('colors.primary');
+  background-color: transparent;
+  box-shadow: theme('colors.primary') 0px 0px 0px 2px inset;
+}
+.btn--secondary:hover {
+  color: theme('colors.primary');
+  background-color: theme('colors.silver');
+  box-shadow: theme('colors.primary') 0px 0px 0px 2px inset;
+}
+.btn--secondary:focus {
+  color: theme('colors.primary');
+  background-color: theme('colors.silver');
+  box-shadow: theme('colors.light-grey') 0px 0px 0px 2px inset;
+}
+.btn--secondary:active {
+  color: theme('colors.primary');
+  background-color: theme('colors.silver');
+  box-shadow: theme('colors.silver') 0px 0px 0px 2px inset;
+}
+.btn--secondary.loading {
+  color: theme('colors.primary');
+  background: theme('colors.silver');
+  box-shadow: theme('colors.silver') 0px 0px 0px 2px inset;
+}
+.btn--secondary:disabled {
+  color: theme('colors.grey-blue');
+  background: theme('colors.silver');
+  box-shadow: theme('colors.silver') 0px 0px 0px 2px inset;
+}
+
+/** Tertiary Btn */
+.btn--tertiary {
+  color: theme('colors.primary');
+  background: white;
+}
+.btn--tertiary:hover {
+  color: theme('colors.primary');
+  background: theme('colors.silver');
+}
+.btn--tertiary:focus {
+  color: theme('colors.primary');
+  background: transparent;
+  box-shadow: theme('colors.grey') 0px 0px 0px 1px inset;
+}
+.btn--tertiary:active {
+  color: theme('colors.primary');
+  background: theme('colors.silver');
+  box-shadow: theme('colors.silver') 0px 0px 0px 1px inset;
+}
+.btn--tertiary.loading {
+  color: theme('colors.primary');
+  background: theme('colors.silver');
+  box-shadow: theme('colors.silver') 0px 0px 0px 1px inset;
+}
+.btn--tertiary:disabled {
+  color: theme('colors.grey-blue');
+  background: theme('colors.silver');
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 24px;
+}
+.btn--medium {
+  font-size: 16px;
+  padding: calc(14px * var(--coef)) calc(32px * var(--coef));
+}
+.btn--normal {
+  font-size: 18px;
+  padding: calc(16px * var(--coef)) calc(32px * var(--coef));
+}
+
+@media (min-width: 640px) {
+  .btn {
+    --coef: 0.8;
+  }
+}
+@media (min-width: 1024px) {
+  .btn {
+    --coef: 1;
+  }
+}

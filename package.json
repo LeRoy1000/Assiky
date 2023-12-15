@@ -1,0 +1,38 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "histoire": "histoire dev --port 6006",
+    "build-histoire": "histoire build"
+  },
+  "devDependencies": {
+    "@histoire/plugin-nuxt": "^0.17.5",
+    "@histoire/plugin-vue": "^0.17.5",
+    "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.0.0",
+    "@nuxtjs/i18n": "^8.0.0-rc.5",
+    "@vueuse/core": "^10.6.1",
+    "@vueuse/nuxt": "^10.6.1",
+    "histoire": "^0.17.5",
+    "nuxt": "^3.8.1",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.28",
+    "@nuxtjs/tailwindcss": "^6.9.4",
+    "@pinia/nuxt": "^0.5.1",
+    "bootstrap-icons": "^1.11.1",
+    "lightgallery": "^2.7.2",
+    "pinia": "^2.1.7",
+    "swiper": "^11.0.5",
+    "vue-star-rating": "^2.1.0"
+  },
+  "packageManager": "yarn@4.0.1"
+}
